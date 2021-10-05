@@ -56,11 +56,6 @@ img {
   padding: 15px 0;
 }
 
-/*MENU HEADER*/
-.menu-header {
-  height: 170px;
-}
-
 .menu ul {
   list-style: none;
 }
@@ -68,10 +63,23 @@ img {
   padding: 2px;
 }
 
+/*hover li*/
+.menu ul li:hover {
+  color: white;
+  cursor: pointer;
+  filter:  brightness(0) invert(1);
+}
+
 .menu ul img {
   width: 25px;
   vertical-align: middle;
   margin-right: 5px;
+  filter: brightness(60%);
+}
+
+/*MENU HEADER*/
+.menu-header {
+  height: 170px;
 }
 
 #menu-header-main {
@@ -100,7 +108,7 @@ img {
 }
 
 .menu-main ul li {
-  padding: 5px 0;
+  padding: 5px 3px;
 }
 
 /*MENU FOOTER*/
@@ -132,6 +140,12 @@ img {
   font-size: 14px;
   font-weight: bold;
   color: white;
+}
+
+/*hover install-app*/
+.menu-footer .install-app:hover {
+  color: white;
+  cursor: pointer;
 }
 
 /*************** HEADER ***************/
