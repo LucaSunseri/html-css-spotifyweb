@@ -8,10 +8,33 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: white;
 }
 
 .flex-container {
   display: flex;
+}
+
+.box-img {
+  width: 10vw;
+  height: 10vw;
+}
+
+img {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.box-text {
+  text-align: center;
 }
 
 /*************** MENU ***************/
@@ -21,15 +44,20 @@ body {
   background-color: black;
 }
 
-/*************** MAIN ***************/
-main {
-  width: calc(100% - 225px);
-  height: calc(100vh - 70px);
-  background-color: blue;
-  overflow: auto;
-  padding-top: 60px;
+.menu-header {
+  height: 150px;
 }
 
+.menu-main {
+  height: calc(100% - 260px);
+  overflow: auto;
+}
+
+.menu-footer {
+  max-height: 50px;
+}
+
+/*************** HEADER ***************/
 header {
   position: fixed;
   top: 0;
@@ -40,8 +68,82 @@ header {
   z-index: 999;
 }
 
+header .btn {
+  text-align: right;
+  line-height: 60px;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+/*************** MAIN ***************/
+main {
+  width: calc(100% - 225px);
+  height: calc(100vh - 70px);
+  background-color: blue;
+  overflow: auto;
+  padding: 15px;
+  padding-top: 60px;
+}
+
+.main-nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/*ASCOLTATI DI RECENTE*/
+.acoltati-di-recente {
+  margin-bottom: 25px;
+}
+
+.acoltati-di-recente .flex-container {
+  flex-wrap: wrap;
+}
+
+/*CREATO PER TE*/
+.creato-per-te {
+  margin-bottom: 25px;
+}
+
+.creato-per-te .flex-container {
+  flex-wrap: wrap;
+}
+
+/*ARTISTI PIU' POPOLARIs*/
+.artisti-piu-popolari {
+  margin-bottom: 25px;
+}
+
+.artisti-piu-popolari .flex-container {
+  flex-wrap: wrap;
+}
+
+.box.popular-artist .box-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /*************** FOOTER ***************/
 footer {
   height: 70px;
   background-color: aquamarine;
 }
+
+footer .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.left-footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
