@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Spotify</title>  
 </head>
 
@@ -16,11 +17,13 @@
   <div class="flex-container">
 
     <div class="menu">
+
       <div class="logo">
         <img src="img/logo.svg" alt="">
       </div>
+
       <div class="menu-header">
-        <ul>
+        <ul id="menu-header-main">
           <li>
             <img src="img/home.svg" alt="home">
             Home
@@ -34,32 +37,42 @@
             La tua libreria
           </li>
         </ul>
-        <ul>
-          <li>
 
+        <ul id="menu-header-bottom">
+          <li>
+            <i class="fas fa-plus-square"></i>
+            Crea playlist
+          </li>
+          <li>
+            <i class="fas fa-heart"></i>
+            Brani preferiti
           </li>
         </ul>
+
       </div>
+
       <div class="menu-main">
         <ul>
-          <li>Nuova Playlist</li>
-          <li>Nuova Playlist</li>
-          <li>Nuova Playlist</li>
-          <li>Nuova Playlist</li>
-          <li>Nuova Playlist</li>
+          <li>Nome Playlist</li>
+          <li>Nome Playlist</li>
+          <li>Nome Playlist</li>
+          <li>Nome Playlist</li>
+          <li>Nome Playlist</li>
         </ul>
       </div>
+
       <div class="menu-footer">
-        <span>
+        <div>
           <img src="img/download.svg" alt="download">
           Installa app
-        </span>
+        </div>
         <div class="line"></div>
-        <span>
+        <div class="user">
           <img id="img-user" src="img/profile.svg" alt="profile">
           Luca Sunseri
-        </span>
+        </div>
       </div>
+
     </div>
 
     <header>

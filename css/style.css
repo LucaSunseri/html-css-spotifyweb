@@ -37,12 +37,18 @@ img {
   text-align: center;
 }
 
+.line {
+    height: 1px;
+    background: white;
+}
+
 /*************** MENU ***************/
 .menu {
   width: 225px;
   height: calc(100vh - 70px);
   background-color: black;
-  padding-left: 15px;
+  padding: 0 15px;
+  color: #a1a1a1;
 }
 
 .menu .logo img {
@@ -52,23 +58,49 @@ img {
 
 /*MENU HEADER*/
 .menu-header {
-  height: 150px;
+  height: 170px;
 }
 
 .menu ul {
   list-style: none;
 }
+.menu ul li {
+  padding: 2px;
+}
 
 .menu ul img {
-  width: 20px;
-  vertical-align: bottom;
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#menu-header-main {
+  margin-bottom: 25px;
+}
+
+
+#menu-header-bottom .fas.fa-plus-square {
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#menu-header-bottom .fas.fa-heart {
+  font-size: 22px;
+  color: #5040a4;
+  vertical-align: middle;
   margin-right: 5px;
 }
 
 /*MENU MAIN*/
 .menu-main {
-  height: calc(100% - 270px);
+  height: calc(100% - 310px);
   overflow: auto;
+  padding: 10px 0;
+}
+
+.menu-main ul li {
+  padding: 5px 0;
 }
 
 /*MENU FOOTER*/
@@ -77,9 +109,17 @@ img {
   margin-bottom: 20px;
 }
 
+.menu-footer div {
+  padding: 5px 0;
+}
+
+.menu-footer .line {
+  padding: 0;
+}
+
 .menu-footer img {
   width: 20px;
-  vertical-align: bottom;
+  vertical-align: middle;
   margin-right: 5px;
 }
 
@@ -88,13 +128,19 @@ img {
   border-radius: 50%;
 }
 
+.menu-footer .user {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
 /*************** HEADER ***************/
 header {
   position: fixed;
   top: 0;
   right: 0;
   width: calc(100% - 225px);
-  height: 60px;
+  height: 70px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
@@ -125,7 +171,7 @@ main {
   background-color: #141922;
   overflow: auto;
   padding: 15px;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .main-nav ul {
@@ -172,8 +218,11 @@ main {
 
 /*************** FOOTER ***************/
 footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   z-index: 888;
+  width: 100%;
   height: 70px;
   background-color: #282828;
 }
