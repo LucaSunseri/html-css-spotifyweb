@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   color: white;
 }
 
@@ -42,19 +42,50 @@ img {
   width: 225px;
   height: calc(100vh - 70px);
   background-color: black;
+  padding-left: 15px;
 }
 
+.menu .logo img {
+  width: 135px;
+  padding: 15px 0;
+}
+
+/*MENU HEADER*/
 .menu-header {
   height: 150px;
 }
 
+.menu ul {
+  list-style: none;
+}
+
+.menu ul img {
+  width: 20px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+/*MENU MAIN*/
 .menu-main {
-  height: calc(100% - 260px);
+  height: calc(100% - 270px);
   overflow: auto;
 }
 
+/*MENU FOOTER*/
 .menu-footer {
   max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.menu-footer img {
+  width: 20px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+#img-user {
+  background-color: grey;
+  border-radius: 50%;
 }
 
 /*************** HEADER ***************/
@@ -64,22 +95,34 @@ header {
   right: 0;
   width: calc(100% - 225px);
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
 
+header .flex-container {
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
 header .btn {
-  text-align: right;
-  line-height: 60px;
-  vertical-align: middle;
   margin-right: 50px;
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+header .btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /*************** MAIN ***************/
 main {
   width: calc(100% - 225px);
   height: calc(100vh - 70px);
-  background-color: blue;
+  background-color: #141922;
   overflow: auto;
   padding: 15px;
   padding-top: 60px;
@@ -129,8 +172,10 @@ main {
 
 /*************** FOOTER ***************/
 footer {
+  position: relative;
+  z-index: 888;
   height: 70px;
-  background-color: aquamarine;
+  background-color: #282828;
 }
 
 footer .flex-container {
