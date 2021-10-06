@@ -208,8 +208,18 @@ header .btn:hover {
 }
 
 .box-img {
+  position: relative;
   width: 100%;
   height: 12vw;
+}
+
+
+.box-img i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 img {
@@ -219,6 +229,19 @@ img {
 
 .box-text {
   text-align: center;
+}
+
+/*hover BOX play*/
+.box:hover {
+  cursor: pointer;
+}
+
+.box:hover .box-img .hover-brightness{
+  filter: brightness(65%);
+}
+
+.box:hover .box-img i {
+  display: block;
 }
 
 /*NAV*/
