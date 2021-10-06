@@ -29,6 +29,10 @@ body {
   border-bottom: 2px solid #1DB954;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /*************** MAIN ***************/
 main {
   height: calc(100% - 70px);
@@ -66,8 +70,8 @@ header .btn:hover {
 }
 
 /************ MENU ************/
-/*MENU >768PX*/
-.menu {
+/* MENU DESKTOP > 768px */
+.menu-desktop {
   width: 220px;
   height: 100%;
   padding: 0 15px;
@@ -76,36 +80,32 @@ header .btn:hover {
   overflow: hidden;
 }
 
-.menu ul {
-  list-style-type: none;
-}
-
-.menu ul img {
+.menu-desktop ul img {
   width: 25px;
   vertical-align: middle;
   margin-right: 5px;
   filter: brightness(60%);
 }
 
-.menu ul li {
+.menu-desktop ul li {
   padding: 2px;
 }
 
 /*hover li*/
-.menu ul li:hover {
+.menu-desktop ul li:hover {
   color: white;
   cursor: pointer;
   filter:  brightness(0) invert(1);
 }
 
 /*LOGO*/
-.menu .logo img {
+.menu-desktop .logo img {
   width: 135px;
   padding: 15px 0;
 }
 
 /*MENU HEADER*/
-.menu-header {
+.menu-desktop .menu-header {
   height: 170px;
 }
 
@@ -127,32 +127,32 @@ header .btn:hover {
 }
 
 /*MENU MAIN*/
-.menu-main {
+.menu-desktop .menu-main {
   height: calc(100% - 310px);
   min-height: 50px;
   overflow: auto;
   padding: 10px 0;
 }
 
-.menu-main ul li {
+.menu-desktop .menu-main ul li {
   padding: 5px 3px;
 }
 
 /*MENU FOOTER*/
-.menu-footer {
+.menu-desktop .menu-footer {
   max-height: 50px;
   margin-bottom: 20px;
 }
 
-.menu-footer div {
+.menu-desktop .menu-footer div {
   padding: 5px 0;
 }
 
-.menu-footer .line {
+.menu-desktop .menu-footer .line {
   padding: 0;
 }
 
-.menu-footer img {
+.menu-desktop .menu-footer img {
   width: 20px;
   vertical-align: middle;
   margin-right: 5px;
@@ -163,32 +163,83 @@ header .btn:hover {
   border-radius: 50%;
 }
 
-.menu-footer .user {
+.menu-desktop .menu-footer .user {
   font-size: 14px;
   font-weight: bold;
   color: white;
 }
 
-.menu-footer .install-app {
+.menu-desktop .menu-footer .install-app {
   filter: brightness(60%);
 }
 
 /*hover install-app*/
-.menu-footer .install-app:hover {
+.menu-desktop .menu-footer .install-app:hover {
   color: white;
   filter:  brightness(0) invert(1);
   cursor: pointer;
 }
 
-/*MENU <768px*/
+
+/* MENU MOBILE < 768px */
 .menu-mobile {
   display: none;
-  width: 60px;
+  width: 40px;
   height: 100%;
-  padding: 0 15px;
   color: #a1a1a1;
   background-color: black;
   overflow: hidden;
+}
+
+/*LOGO*/
+.menu-mobile .logo {
+  height: 70px;
+}
+
+.menu-mobile .flex-container {
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 70px);
+}
+
+.menu-mobile ul img {
+  width: 100%;
+  filter: brightness(60%);
+  transform: scale(0.8);
+}
+/*hover li*/
+.menu-mobile ul li:hover {
+  color: white;
+  cursor: pointer;
+  filter:  brightness(0) invert(1);
+}
+
+.menu-mobile .logo img {
+  width: 100%;
+  padding: 15px 0px;
+  transform: scale(0.8);
+}
+
+/*MENU FOOTER*/
+.menu-mobile .menu-footer .line {
+  padding: 0;
+}
+
+.menu-mobile .menu-footer li:nth-child(1) {
+  margin-right: 4px;
+}
+
+.menu-mobile .menu-footer .mobile-no-hover img {
+  transform: scale(0.8);
+  padding: 5PX;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+/*hover mobile-no-hover*/
+.menu-mobile .mobile-no-hover:hover {
+  filter:  brightness(100%) invert(0);
+  cursor: pointer;
 }
 
 /************ CONTENT ************/
@@ -261,7 +312,6 @@ img {
 
 /*NAV*/
 .content-nav ul {
-  list-style: none;
   text-align: center;
 }
 
@@ -524,10 +574,11 @@ margin-right: 5px;
 
 } 
 
+
 @media (max-width: 768px) { 
   /************ CONTENT ************/
   .box {
-    width: calc((100% / 3) - 10px);
+    width: calc((100% / 2) - 10px);
   }
 
   /*************** FOOTER ***************/
@@ -542,12 +593,12 @@ margin-right: 5px;
 @media (max-width: 576px) { 
   /************ HEADER ************/
   header {
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
     height: 70px;
   }
 
   /************ MENU ************/
-  .menu {
+  .menu-desktop {
   display: none;
   }
 
@@ -557,12 +608,28 @@ margin-right: 5px;
 
   /************ CONTENT ************/
   .content {
-    width: calc(100% - 60px);
-  }
-  .box {
-    width: calc((100% / 2) - 10px);
+    width: calc(100% - 40px);
   }
 
+  /*************** FOOTER ***************/
+  /*FOOTER LEFT*/
+  footer{
+    font-size: 10px;
+  }
+  .left-footer .heart-folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-footer .heart-folder i {
+    padding-bottom: 5px;
+  }
+
+  /*FOOTER RIGHT*/
+  .right-footer .volume .line {
+    width: 50px;
+  }
   
 } 
 
