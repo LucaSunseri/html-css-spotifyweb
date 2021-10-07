@@ -22,11 +22,21 @@ body {
 
 .line {
   height: 1px;
-  background: white;
+  background-color: white;
+}
+
+.active-bottom {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 2px;
+  width: 30px;
+  background-color: #1DB954;
 }
 
 .active-left {
-  border-left: 3px solid #1DB954;
+  border-left: 2px solid #1DB954;
 }
 
 ul {
@@ -207,6 +217,7 @@ header .btn:hover {
   filter: brightness(60%);
   transform: scale(0.8);
 }
+
 /*hover li*/
 .menu-mobile ul li:hover {
   color: white;
@@ -316,6 +327,7 @@ img {
 }
 
 .content-nav ul li {
+  position: relative;
   display: inline-block;
   color: #a1a1a1;
   margin: 20px 5px;
