@@ -374,7 +374,7 @@ img {
 /*************** FOOTER ***************/
 footer {
   position: relative;
-  z-index: 999;
+  z-index: 999; /*Nascondere call-to-action quando la finestra è chiusa in altezza*/
   height: 70px;
   padding: 10px;
   color: white;
