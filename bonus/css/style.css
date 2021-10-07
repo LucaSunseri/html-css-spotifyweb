@@ -578,6 +578,11 @@ margin-right: 5px;
     width: calc((100% / 4) - 10px);
   }
 
+  /*Nascondere le cover piuttosto che farle scivolare sotto in versione md, s, xs.*/
+  .box.artist:nth-last-child(-n+2) {
+    display:none;
+  }
+
   .content h1 {
     margin-top: 20px;
   }
@@ -594,6 +599,11 @@ margin-right: 5px;
   /************ CONTENT ************/
   .box {
     width: calc((100% / 2) - 10px);
+  }
+
+  /*Nascondere le cover piuttosto che farle scivolare sotto in versione md, s, xs.*/
+  .box.artist:nth-last-child(-n+4) {
+    display:none;
   }
 
   /*************** FOOTER ***************/
