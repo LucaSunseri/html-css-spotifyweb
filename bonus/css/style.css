@@ -72,7 +72,7 @@ header .btn {
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: bold;
-  /*Aggiungere animation*/
+  /*BONUS 3 Aggiungere animation*/
   transition: all 0.2s linear;
 }
 
@@ -316,7 +316,7 @@ img {
   cursor: pointer;
 }
 
-.box:hover .box-img .hover-brightness{
+.box:hover .box-img .hover-brightness {
   filter: brightness(65%);
 }
 
@@ -377,7 +377,7 @@ img {
 /*************** FOOTER ***************/
 footer {
   position: relative;
-  z-index: 999; /*Nascondere call-to-action quando la finestra è chiusa in altezza*/
+  z-index: 999; /*BONUS 2 Nascondere call-to-action quando la finestra è chiusa in altezza*/
   height: 70px;
   padding: 10px;
   color: white;
@@ -473,7 +473,7 @@ margin-right: 5px;
 }
 
 .far.fa-play-circle.fa-3x {
-  /*Aggiungere animation*/
+  /*BONUS 3 Aggiungere animation*/
   transition: all 0.1s linear;
 }
 
@@ -575,6 +575,17 @@ margin-right: 5px;
 
 /*************** RESPONSIVE ***************/
 
+/* BONUS 4 rendere più responsive */
+@media (max-width: 1200px) { 
+  .box {
+    width: calc((100% / 5) - 10px);
+  }
+
+  /* BONUS 1 Nascondere le cover piuttosto che farle scivolare sotto */
+  .box.artist:nth-last-child(-n+1) {
+    display:none;
+  }
+}
 
 @media (max-width: 992px) { 
   /************ CONTENT ************/
@@ -586,7 +597,7 @@ margin-right: 5px;
     width: calc((100% / 4) - 10px);
   }
 
-  /*Nascondere le cover piuttosto che farle scivolare sotto in versione md, s, xs.*/
+  /* BONUS 1 Nascondere le cover piuttosto che farle scivolare sotto */
   .box.artist:nth-last-child(-n+2) {
     display:none;
   }
@@ -602,6 +613,17 @@ margin-right: 5px;
 
 } 
 
+/* BONUS 4 rendere più responsive */
+@media (max-width: 860px) { 
+  .box {
+    width: calc((100% / 3) - 10px);
+  }
+
+  /* BONUS 1 Nascondere le cover piuttosto che farle scivolare sotto */
+  .box.artist:nth-last-child(-n+3) {
+    display:none;
+  }
+}
 
 @media (max-width: 768px) { 
   /************ CONTENT ************/
@@ -609,7 +631,7 @@ margin-right: 5px;
     width: calc((100% / 2) - 10px);
   }
 
-  /*Nascondere le cover piuttosto che farle scivolare sotto in versione md, s, xs.*/
+  /* BONUS 1 Nascondere le cover piuttosto che farle scivolare sotto */
   .box.artist:nth-last-child(-n+4) {
     display:none;
   }
@@ -685,6 +707,25 @@ margin-right: 5px;
     width: 50px;
   }
   
+  /* BONUS 4 rendere più responsive */
+  .right-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .fas.fa-desktop {
+    order:3;
+  }
+
+  .right-footer i {
+   margin-bottom: 5px;
+  }
+
+  .fas.fa-expand-alt {
+    display: none;
+  }
+
 } 
 
 
