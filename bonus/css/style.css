@@ -72,8 +72,11 @@ header .btn {
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: bold;
+  /*Aggiungere animation*/
+  transition: all 0.2s linear;
 }
 
+/*hover btn*/
 header .btn:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -467,6 +470,11 @@ margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.far.fa-play-circle.fa-3x {
+  /*Aggiungere animation*/
+  transition: all 0.1s linear;
 }
 
 .center-footer .play i {
