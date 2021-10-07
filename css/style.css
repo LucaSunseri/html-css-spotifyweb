@@ -114,6 +114,11 @@ header .btn:hover {
   padding: 15px 0;
 }
 
+/*hover logo*/
+.menu-desktop .logo img:hover {
+  cursor: pointer;
+}
+
 /*MENU HEADER*/
 .menu-desktop .menu-header {
   height: 170px;
@@ -204,6 +209,11 @@ header .btn:hover {
 /*LOGO*/
 .menu-mobile .logo {
   height: 70px;
+}
+
+/*hover logo*/
+.menu-mobile .logo:hover {
+  cursor: pointer;
 }
 
 .menu-mobile .flex-container {

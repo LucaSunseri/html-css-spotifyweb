@@ -114,7 +114,18 @@ header .btn:hover {
 /*LOGO*/
 .menu-desktop .logo img {
   width: 135px;
-  padding: 15px 0;
+  padding: 2px 0;
+  margin: 15px 0;
+  /*BONUS 3 Aggiungere animation*/
+  transition: all 1s ease;
+}
+
+/*hover logo*/
+.menu-desktop .logo img:hover {
+  cursor: pointer;
+  background-color: #1DB954;
+  border-radius: 10px;
+  margin: 15px 0;
 }
 
 /*MENU HEADER*/
@@ -207,6 +218,11 @@ header .btn:hover {
 /*LOGO*/
 .menu-mobile .logo {
   height: 70px;
+}
+
+/*hover logo*/
+.menu-mobile .logo:hover {
+  cursor: pointer;
 }
 
 .menu-mobile .flex-container {
